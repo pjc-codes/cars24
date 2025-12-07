@@ -23,8 +23,6 @@ with open('lgbm_model_final.pkl', 'rb') as file:
 with open('scaler_joblib.pkl', 'rb') as file:
     scaler = joblib.load(file)
 
-
-
 st.header('Model Prediction')
 st.write('Input features to get a prediction from the loaded model.')
 age=st.number_input('Enter age:', value=18)
